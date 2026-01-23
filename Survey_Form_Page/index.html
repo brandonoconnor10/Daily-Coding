@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+</head>
+<body>
+  <h1 id="title">User Experience Survey</h1>
+  <p id="description">Please fill out this short survey to help us improve our services.</p>
+
+  <form id="survey-form">
+    <label id="name-label" for="name">Name:</label>
+    <input id="name" type="text" placeholder="Enter your full name" required><br><br>
+
+    <label id="email-label" for="email">Email:</label>
+    <input id="email" type="email" placeholder="Enter your email address" required><br><br>
+
+    <label id="number-label" for="number">Age:</label>
+    <input id="number" type="number" min="10" max="100" placeholder="Enter your age"><br><br>
+
+    <label for="dropdown">How did you hear about us?</label>
+    <select id="dropdown">
+      <option value="friend">Friend</option>
+      <option value="online">Online</option>
+      <option value="advertisement">Advertisement</option>
+    </select><br><br>
+
+    <p>Would you recommend us?</p>
+    <input type="radio" id="yes" name="recommend" value="yes">
+    <label for="yes">Yes</label>
+    <input type="radio" id="no" name="recommend" value="no">
+    <label for="no">No</label><br><br>
+
+    <p>What services do you use?</p>
+    <input type="checkbox" id="service1" name="services" value="consulting">
+    <label for="service1">Consulting</label>
+    <input type="checkbox" id="service2" name="services" value="training">
+    <label for="service2">Training</label>
+    <input type="checkbox" id="service3" name="services" value="support">
+    <label for="service3">Support</label><br><br>
+
+    <label for="comments">Additional Comments:</label><br>
+    <textarea id="comments" rows="4" cols="40" placeholder="Enter your comments here"></textarea><br><br>
+
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</body>
+</html>
