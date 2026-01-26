@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f9;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* First input styled differently */
+input:first-of-type {
+  border-radius: 20px;
+}
+
+/* Focus */
+input:focus, textarea:focus {
+  border-color: dodgerblue;
+  outline: none;
+}
+
+/* Validation states */
+input:invalid, select:invalid, textarea:invalid {
+  border-color: red;
+}
+
+input:valid, select:valid, textarea:valid {
+  border-color: green;
+}
+
+/* Button hover */
+button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: crimson;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: darkred;
+}
+
+/* Radio group styling */
+.radio-group {
+  margin-top: 20px;
+  border: none;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 8px;
+}
+
+/* Checked radio styling */
+.radio-group input[type="radio"]:checked {
+  border: 2px solid dodgerblue;
+  background-color: #e0f0ff;
+  box-shadow: 0 0 5px dodgerblue;
+}
+
+.radio-group input[type="radio"]:checked + label {
+  color: dodgerblue;
+}
