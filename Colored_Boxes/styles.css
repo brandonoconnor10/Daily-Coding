@@ -1,0 +1,42 @@
+/* styles.css */
+body {
+  background-color: #f4f4f4; /* requirement */
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.color-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.color-box {
+  width: 100px;   /* visible size */
+  height: 100px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Each box with different color type */
+.color1 {
+  background-color: #3498db; /* hex */
+}
+
+.color2 {
+  background-color: rgb(231, 76, 60); /* rgb */
+}
+
+.color3 {
+  background-color: green; /* predefined word */
+}
+
+.color4 {
+  background-color: hsl(45, 100%, 50%); /* hsl */
+}
+
+.color5 {
+  background-color: orange; /* any valid color */
+}
