@@ -1,0 +1,37 @@
+/* styles.css */
+#email {
+  padding: 50px;              /* requirement */
+  margin-top: 50px;           /* requirement */
+  width: 500px;               /* requirement */
+  border: 2px solid #333;     /* requirement */
+  box-sizing: border-box;     /* ensures total width = 500px */
+  background: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+#confidential,
+#top-secret {
+  display: inline-block;      /* requirement */
+  padding: 10px;              /* requirement */
+  margin-left: 20px;          /* requirement */
+  border: 2px solid #555;     /* requirement */
+  font-weight: bold;
+  color: #b00;
+  transform: rotate(-5deg);   /* requirement: rotated */
+}
+
+#top-secret {
+  color: #000;
+  transform: rotate(5deg);    /* requirement: rotated */
+}
+
+p {
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+.blurred {
+  filter: blur(3px);          /* requirement */
+  background-color: #eee;
+  padding: 2px 4px;
+}
