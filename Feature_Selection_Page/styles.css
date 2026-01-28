@@ -1,0 +1,22 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f9;
+  text-align: center;
+  padding: 40px;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.feature-card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.feature-card input[type="checkbox"] { appearance: none; width: 30px; height: 30px; border: 2px solid #555; border-radius: 6px; margin-bottom: 10px; display: inline-block; vertical-align: middle; position: relative; /* important for positioning the checkmark */ cursor: pointer; } /* Checked state */ 
+.feature-card input[type="checkbox"]:checked { background-color: #3498db; border-color: #1d6fa5; } /* Add the checkmark ✓ */ 
+.feature-card input[type="checkbox"]:checked::after { content: "✓"; color: white; font-size: 20px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); /* centers the checkmark */ }
