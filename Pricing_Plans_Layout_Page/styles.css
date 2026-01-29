@@ -1,0 +1,33 @@
+/* styles.css */
+.pricing-container {
+  display: flex;        /* requirement */
+  flex-wrap: wrap;      /* requirement */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.pricing-card {
+  display: flex;                  /* requirement */
+  flex-direction: column;         /* requirement */
+  justify-content: space-between; /* requirement */
+  flex: 0 0 200px;                /* requirement */
+  border: 2px solid black;        /* requirement */
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Order and flex-grow requirements */
+.basic-plan {
+  order: 0; /* requirement */
+}
+
+.pro-plan {
+  order: 1;       /* requirement */
+  flex-grow: 2;   /* requirement */
+}
+
+.premium-plan {
+  order: 2; /* requirement */
+}
