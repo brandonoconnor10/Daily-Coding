@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Technical Documentation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav id="navbar">
+    <header>Web Development Docs</header>
+    <a class="nav-link" href="#HTML_Basics">HTML Basics</a>
+    <a class="nav-link" href="#CSS_Styling">CSS Styling</a>
+    <a class="nav-link" href="#JavaScript_Fundamentals">JavaScript Fundamentals</a>
+    <a class="nav-link" href="#Responsive_Design">Responsive Design</a>
+    <a class="nav-link" href="#Accessibility">Accessibility</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="HTML_Basics">
+      <header>HTML Basics</header>
+      <p>HTML provides the structure of web pages using elements like headings, paragraphs, and lists.</p>
+      <p>Each element is represented by tags enclosed in angle brackets.</p>
+      <p>Attributes provide additional information about elements.</p>
+      <code>&lt;p&gt;This is a paragraph&lt;/p&gt;</code>
+      <p>HTML documents start with a doctype declaration.</p>
+      <ul>
+        <li>Headings</li>
+        <li>Paragraphs</li>
+        <li>Lists</li>
+      </ul>
+      <code>&lt;h1&gt;Heading&lt;/h1&gt;</code>
+    </section>
+
+    <section class="main-section" id="CSS_Styling">
+      <header>CSS Styling</header>
+      <p>CSS controls the presentation of HTML elements.</p>
+      <p>Selectors target elements to apply styles.</p>
+      <p>Properties define the visual aspects like color and size.</p>
+      <code>p { color: blue; }</code>
+      <p>CSS can be inline, internal, or external.</p>
+      <ul>
+        <li>Selectors</li>
+        <li>Properties</li>
+        <li>Values</li>
+      </ul>
+      <code>h1 { font-size: 2em; }</code>
+    </section>
+
+    <section class="main-section" id="JavaScript_Fundamentals">
+      <header>JavaScript Fundamentals</header>
+      <p>JavaScript adds interactivity to web pages.</p>
+      <p>Variables store data values.</p>
+      <p>Functions encapsulate reusable code.</p>
+      <code>let x = 5;</code>
+      <p>Events respond to user actions.</p>
+      <ul>
+        <li>Variables</li>
+        <li>Functions</li>
+        <li>Events</li>
+      </ul>
+      <code>function greet() { alert("Hello"); }</code>
+    </section>
+
+    <section class="main-section" id="Responsive_Design">
+      <header>Responsive Design</header>
+      <p>Responsive design ensures websites look good on all devices.</p>
+      <p>Media queries adjust styles based on screen size.</p>
+      <p>Flexible layouts adapt to different resolutions.</p>
+      <code>@media (max-width: 600px) { body { font-size: 14px; } }</code>
+      <p>Images should scale proportionally.</p>
+      <ul>
+        <li>Fluid grids</li>
+        <li>Flexible images</li>
+        <li>Media queries</li>
+      </ul>
+      <code>img { max-width: 100%; }</code>
+    </section>
+
+    <section class="main-section" id="Accessibility">
+      <header>Accessibility</header>
+      <p>Accessibility ensures websites are usable by everyone.</p>
+      <p>Semantic HTML improves screen reader support.</p>
+      <p>Color contrast helps visually impaired users.</p>
+      <code>&lt;button aria-label="Close"&gt;X&lt;/button&gt;</code>
+      <p>Keyboard navigation should be supported.</p>
+      <ul>
+        <li>Semantic HTML</li>
+        <li>Alt text</li>
+        <li>Keyboard support</li>
+      </ul>
+      <code>&lt;img src="photo.jpg" alt="Description"&gt;</code>
+    </section>
+  </main>
+</body>
+</html>
