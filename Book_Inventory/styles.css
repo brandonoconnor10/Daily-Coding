@@ -1,0 +1,105 @@
+/* General reset */
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #1e1e2f;
+  color: #eee;
+  margin: 0;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #ffcc00;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background: #2a2a3d;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead {
+  background-image: linear-gradient(to right, #444, #666);
+}
+
+th, td {
+  padding: 0.8rem;
+  text-align: center;
+}
+
+/* Row gradients */
+tr[class="read"] {
+  background-image: linear-gradient(to right, #2e7d32, #388e3c);
+}
+
+tr[class="to-read"] {
+  background-image: linear-gradient(to right, #1565c0, #1e88e5);
+}
+
+tr[class="in-progress"] {
+  background-image: linear-gradient(to right, #f57c00, #ef6c00);
+}
+
+/* Span defaults */
+span {
+  display: inline-block;
+}
+
+/* Status styling */
+span[class="status"],
+span[class^="rate"] {
+  height: 1.6em;
+  width: 7em;
+  padding: 0.2em;
+  border-radius: 6px;
+}
+
+/* Status by row */
+tr[class="read"] span[class="status"] {
+  border: 2px solid #1b5e20;
+  background-image: linear-gradient(#a5d6a7, #66bb6a);
+}
+
+tr[class="to-read"] span[class="status"] {
+  border: 2px solid #0d47a1;
+  background-image: linear-gradient(#90caf9, #42a5f5);
+}
+
+tr[class="in-progress"] span[class="status"] {
+  border: 2px solid #e65100;
+  background-image: linear-gradient(#ffcc80, #fb8c00);
+}
+
+/* Rate circles */
+span[class^="rate"] > span {
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  margin: 0 0.2em;
+  height: 14px;
+  width: 14px;
+  background-color: #444;
+}
+
+/* Ratings filled */
+span[class~="one"] span:first-child {
+  background-image: linear-gradient(#ffeb3b, #fbc02d);
+}
+
+span[class~="two"] span:nth-child(-n+2) {
+  background-image: linear-gradient(#ffeb3b, #fbc02d);
+}
+
+span[class~="three"] span {
+  background-image: linear-gradient(#ffeb3b, #fbc02d);
+}
