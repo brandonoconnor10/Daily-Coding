@@ -1,0 +1,36 @@
+.gallery {
+  display: flex;
+  gap: 10px;
+}
+
+.gallery-item {
+  width: 150px;
+  cursor: pointer;
+}
+
+.lightbox {
+  position: fixed;       /* fixed positioning */
+  top: 0;                /* aligned top */
+  left: 0;               /* aligned left */
+  width: 100%;           /* cover full viewport */
+  height: 100%;          /* cover full viewport */
+  background: rgba(0, 0, 0, 0.8); /* background color */
+  display: none;         /* hidden initially */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#lightbox-image {
+  max-width: 90%;
+  max-height: 80%;
+}
