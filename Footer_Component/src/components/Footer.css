@@ -1,0 +1,63 @@
+/* Footer container */
+footer {
+  background-color: #111;
+  color: #eee;
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* stack main sections vertically */
+  align-items: center;
+  gap: 25px; /* space between sections */
+}
+
+/* Layout for the link groups */
+footer .links {
+  display: flex;
+  justify-content: center;
+  gap: 60px; /* space between each <ul> */
+  flex-wrap: wrap; /* wrap on smaller screens */
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+footer ul li {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+footer ul li:hover {
+  color: #4cafef;
+}
+
+/* Footer text */
+footer p {
+  font-size: 0.85rem;
+  color: #aaa;
+  margin: 0;
+}
+
+/* Social icons */
+footer .social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+footer a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: #eee;
+}
+
+footer a:hover {
+  transform: scale(1.2);
+  color: #4cafef;
+}
