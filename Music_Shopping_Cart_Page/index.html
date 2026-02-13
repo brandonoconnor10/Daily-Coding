@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Shopping Cart Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div
+  id="shopping-cart-container"
+  class="flex flex-col lg:flex-row gap-6 p-6"
+>
+  <!-- Products Section -->
+  <div id="products-container" class="flex-1 space-y-6">
+    <!-- Product Card 1 -->
+    <div class="card border rounded-lg p-4 shadow-md">
+      <h2 class="text-xl font-semibold">Electric Guitar</h2>
+      <div class="quantity">Quantity: 2</div>
+      <div class="price">$499.99</div>
+      <button
+        class="remove-button bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded mt-3"
+      >
+        Remove
+      </button>
+    </div>
+
+    <!-- Product Card 2 -->
+    <div class="card border rounded-lg p-4 shadow-md">
+      <h2 class="text-xl font-semibold">Drum Set</h2>
+      <div class="quantity">Quantity: 1</div>
+      <div class="price">$799.99</div>
+      <button
+        class="remove-button bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded mt-3"
+      >
+        Remove
+      </button>
+    </div>
+  </div>
+
+  <!-- Order Summary Section -->
+  <div
+    id="order-summary-container"
+    class="flex-1 border rounded-lg p-6 shadow-md"
+  >
+    <h2 class="text-2xl font-bold mb-4">Order Summary</h2>
+    <div id="total" class="font-semibold text-lg">
+      Total:
+    </div>
+    <div id="total-amount" class="text-lg mb-4">$1799.97</div>
+    <a
+      href="#"
+      class="block text-center bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 rounded"
+    >
+      Checkout
+    </a>
+  </div>
+</div>
+
+  </body>
+</html>
