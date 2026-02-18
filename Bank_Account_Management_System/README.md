@@ -1,0 +1,1 @@
+Bank Account Management System Script that simulates deposits, withdrawals and balance checking
