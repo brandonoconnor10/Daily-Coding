@@ -1,0 +1,1 @@
+SImple Blog post card styled with CSS
